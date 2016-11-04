@@ -1,0 +1,12 @@
+C:\Users\Fabricio\Desktop\FACULDADE\T_I_ITALO_PEDRO\T_I_\T_I_\bin\Debug\T_I_.exe.config
+C:\Users\Fabricio\Desktop\FACULDADE\T_I_ITALO_PEDRO\T_I_\T_I_\obj\Debug\T_I_.csprojResolveAssemblyReference.cache
+C:\Users\Fabricio\Desktop\FACULDADE\T_I_ITALO_PEDRO\T_I_\T_I_\bin\Debug\T_I_.exe
+C:\Users\Fabricio\Desktop\FACULDADE\T_I_ITALO_PEDRO\T_I_\T_I_\bin\Debug\T_I_.pdb
+C:\Users\Fabricio\Desktop\FACULDADE\T_I_ITALO_PEDRO\T_I_\T_I_\obj\Debug\T_I_.exe
+C:\Users\Fabricio\Desktop\FACULDADE\T_I_ITALO_PEDRO\T_I_\T_I_\obj\Debug\T_I_.pdb
+C:\Users\ADM\Downloads\Rede doméstica\Faculdade\ATP\PUC_T_I_\T_I_\T_I_\bin\Debug\T_I_.exe.config
+C:\Users\ADM\Downloads\Rede doméstica\Faculdade\ATP\PUC_T_I_\T_I_\T_I_\obj\Debug\T_I_.exe
+C:\Users\ADM\Downloads\Rede doméstica\Faculdade\ATP\PUC_T_I_\T_I_\T_I_\obj\Debug\T_I_.pdb
+C:\Users\ADM\Downloads\Rede doméstica\Faculdade\ATP\PUC_T_I_\T_I_\T_I_\bin\Debug\T_I_.exe
+C:\Users\ADM\Downloads\Rede doméstica\Faculdade\ATP\PUC_T_I_\T_I_\T_I_\bin\Debug\T_I_.pdb
+C:\Users\ADM\Downloads\Rede doméstica\Faculdade\ATP\PUC_T_I_\T_I_\T_I_\obj\Debug\T_I_.csprojResolveAssemblyReference.cache
