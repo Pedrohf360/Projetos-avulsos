@@ -84,7 +84,9 @@ namespace T_I_
         //FAZ O SPLIT DA MOCHILA E CARREGA NO VETOR
         static void Split(string mochi, ref string[] mochiSplit)
         {
-            mochi = mochi.Replace("\n", "");
+            mochi = mochi.Replace("\n", "").Replace("ã", "a");
+
+            //mochi = mochi.Replace('ã', 'a');
             mochiSplit = mochi.Split(new char[] { ';', '\r', });
         }
 
@@ -117,6 +119,7 @@ namespace T_I_
                 //SWITCH COM TODAS OPÇÕES
                 Console.WriteLine("\n\nDIGITE A OPAÇÃO/ DESEJADA: \n1 - CARREGAR TABELA DE EVOLUÇÃO \n2 - CARREGAR MOCHILA \n3 - EVOLUIR MOCHILA \n4 - EXIBIR MOCHILA EVOLUIDA \n5 - GRAVAR MOCHILA EVOLUÍDA EM ARQUIVO.\n0 - DIGITE '0' PARA SAIR");
                 opcao = int.Parse(Console.ReadLine());
+                Console.Clear();
 
                 while (opcao < 1 || opcao > 5)
                 {
@@ -137,30 +140,36 @@ namespace T_I_
                     case 1:
                         texto = LerEvo(ref evo, ref contEvo);
                         Split(texto, ref evoSplit);
-                        Console.Write(texto);
-                        Console.WriteLine("\n{0} carregados com sucesso.", contEvo);
-                        Console.WriteLine("Aperte qualquer tecla para continuar.", true);
+
+                        Console.Write(texto + "\n");
+                        Console.WriteLine(new string('-', 50));
+                        Console.WriteLine("{0} carregados com sucesso.", contEvo);
+                        Console.WriteLine("\nAperte qualquer tecla para continuar.", true);
                         Console.ReadKey();
                         Console.Clear();
 
                         for (int i = 0; i < mochilaDados.Length * 3; i += 3)
                         {
+
                             mochilaDados[pos].pokemonOriginal = evoSplit[i];
                             mochilaDados[pos].qtdCandies = evoSplit[i + 1];
                             mochilaDados[pos].pokemonEvoluido = evoSplit[i + 2];
                             pos++;
                         }
+                        pos = 0;
                         break;
 
                     //OPÇÃO PARA CARREGAR MOCHILA COM OS POKEMONS DO USUÁRIO
                     case 2:
                         Console.WriteLine("Digite o nome da mochila para ser carregada: ");
                         mochila = Console.ReadLine();
+                        Console.WriteLine();
                         texto = LerMochila(mochila, ref contMochi, ref usuario);
                         Split(usuario, ref mochiSplit);
-                        Console.Write(texto);
-                        Console.WriteLine("\n{0} Pokemons carregados com sucesso da mochila.", contMochi);
-                        Console.WriteLine("Aperte qualquer tecla para continuar.", true);
+                        Console.Write(texto + "\n");
+                        Console.WriteLine(new string('-', 50));
+                        Console.WriteLine("{0} Pokemons carregados com sucesso da mochila.", contMochi);
+                        Console.WriteLine("\nAperte qualquer tecla para continuar.", true);
                         Console.ReadKey();
                         Console.Clear();
                         pos = 0;
@@ -173,6 +182,7 @@ namespace T_I_
                             mochilaParaEvo[pos].qtdCandies = mochiSplit[i + 2];
                             pos++;
                         }
+                        pos = 0;
                         break;
 
                     case 3:
@@ -207,16 +217,20 @@ namespace T_I_
                         Converte(qtdPokemonUsuarioStr, ref qtdPokemonUsuarioInt);
 
                         //Faz a evolução
-                        for (int i = 0; i < mochilaDados.Length; i++)
+                        for (int i = 0; i < mochilaParaEvo.Length; i++)
                         {
-                            if (mochilaParaEvo[i].pokemon == mochilaDados[i].pokemonOriginal)
+                            for (int j = 0; j < mochilaDados.Length; j++)
                             {
-                                while (candiesUsuarioInt[i] < candiesDadosEvoInt[i])
+                                if (mochilaParaEvo[i].pokemon == mochilaDados[j].pokemonOriginal)
                                 {
-                                    candiesUsuarioInt[i] = candiesDadosEvoInt[i] - candiesUsuarioInt[i];
+                                    while (candiesUsuarioInt[i] > candiesDadosEvoInt[i] && qtdPokemonUsuarioInt[i] > 0)
+                                    {
+                                        candiesUsuarioInt[i] -= candiesDadosEvoInt[j];
+                                        Console.WriteLine(mochilaDados[i].pokemonOriginal + " evolui para:" + mochilaDados[i].pokemonEvoluido);
+                                        Console.WriteLine("Candies restantes: {0}.", candiesUsuarioInt[i]);
+                                    }
                                 }
                             }
-                            
                         }
 
 
