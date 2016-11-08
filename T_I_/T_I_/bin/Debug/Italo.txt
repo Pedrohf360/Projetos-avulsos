@@ -1,3 +1,7 @@
 Abra;2;100
 Bellsprout;3;50
 Bulbasaur;1;100
+Ivysaur;2;100
+Arbok;2;0
+Arcanine;3;0
+Articuno;3;0
