@@ -14,9 +14,9 @@ namespace T_I_
         //STRUCT PARA SALVAR OS DADOS DA MOCHILA DO USUÁRIO JÁ EVOLUÍDOS
         struct MochilaUsuarioEvoluída
         {
-            public string pokemonEvoluído;
+            public string pokemonEvoluido;
             public string pokemonOriginal;
-            public int qtdPokemonEvoluídos;
+            public int qtdPokemEvol;
             public int qtdPokemonRestantesOriginais;
             public int qtdCandiesRestantes;
             public string pokemonQueNaoEvolue;
@@ -92,12 +92,10 @@ namespace T_I_
         //CONVERTE CANDIES PARA INTEIRO
         static void Converte(string[] candiesConverte, ref int[] candiesInt)
         {
-            int pos = 0;
             candiesInt = new int[candiesConverte.Length];
             for (int i = 0; i < candiesConverte.Length; i++)
             {
-                candiesInt[i] = int.Parse(candiesConverte[pos]);
-                pos++;
+                candiesInt[i] = int.Parse(candiesConverte[i]);
             }
         }
 
@@ -107,9 +105,9 @@ namespace T_I_
         {
             int opcao = 0, contEvo = 0, contMochi = 0, pos = 0, contPokemonsEvoluidos1x = 0, contPokemonsEvoluidos2x = 0;
             string evo = "", mochila = "", texto = "", usuario = "";
-            string[] evoSplit = null, qtdCandiesUsuario = null, mochiSplit = null, qtdCandiesDados = null, qtdPokemonUsuario = null;
+            string[] evoSplit = null, qtdCandiesUsuario = null, mochiSplit = null, qtdCandiesDados = null, qtdPokemonUsuarioStr = null;
             MochilaUsuario[] mochilaParaEvo = null;
-            MochilaDadosEvoluir[] mochilaDados = new MochilaDadosEvoluir[136];
+            MochilaDadosEvoluir[] mochilaDados = new MochilaDadosEvoluir[137];
             MochilaUsuarioEvoluída[] mochilaEvoluida = null;
             int[] candiesUsuarioInt, candiesDadosEvoInt, qtdPokemonUsuarioInt;
 
@@ -178,34 +176,48 @@ namespace T_I_
                         break;
 
                     case 3:
-
+                        //ARRAYS MOCHILA USUÁRIO
                         candiesUsuarioInt = new int[contMochi];
-                        candiesDadosEvoInt = new int[contEvo];
                         qtdPokemonUsuarioInt = new int[contMochi];
                         qtdCandiesUsuario = new string[contMochi];
-                        qtdCandiesDados = new string[contEvo];
-                        qtdPokemonUsuario = new string[contMochi];
+                        qtdPokemonUsuarioStr = new string[contMochi];
 
-                        //FOR's PARA PASSAR OS STRINGS DO STRUCT PARA NOVOS ARRAYS
+                        //ARRAYS MOCHILA DADOS
+                        candiesDadosEvoInt = new int[contEvo];
+                        qtdCandiesDados = new string[contEvo];
+                        
+
+                        //FOR's PARA PASSAR OS STRINGS DO STRUCT  PARA NOVOS ARRAYS
                         for (int i = 0; i < mochilaParaEvo.Length; i++)
                         {
                             qtdCandiesUsuario[i] = mochilaParaEvo[i].qtdCandies;
+                        }
+                        for (int i = 0; i < mochilaParaEvo.Length; i++)
+                        {
+                            qtdPokemonUsuarioStr[i] = mochilaParaEvo[i].qtdPokemon;
                         }
                         for (int i = 0; i < mochilaDados.Length; i++)
                         {
                             qtdCandiesDados[i] = mochilaDados[i].qtdCandies;
                         }
-                        for (int i = 0; i < mochilaParaEvo.Length; i++)
-                        {
-                            qtdPokemonUsuario[i] = mochilaParaEvo[i].qtdPokemon;
-                        }
+
                         //CHAMA OS MÉTODOS PARA CONVERTER OS ARRAYS DOS CANDIES DE STRING PARA INT
                         Converte(qtdCandiesUsuario, ref candiesUsuarioInt);
                         Converte(qtdCandiesDados, ref candiesDadosEvoInt);
-                        Converte(qtdPokemonUsuario, ref qtdPokemonUsuarioInt);
+                        Converte(qtdPokemonUsuarioStr, ref qtdPokemonUsuarioInt);
 
-
-
+                        //Faz a evolução
+                        for (int i = 0; i < mochilaDados.Length; i++)
+                        {
+                            if (mochilaParaEvo[i].pokemon == mochilaDados[i].pokemonOriginal)
+                            {
+                                while (candiesUsuarioInt[i] < candiesDadosEvoInt[i])
+                                {
+                                    candiesUsuarioInt[i] = candiesDadosEvoInt[i] - candiesUsuarioInt[i];
+                                }
+                            }
+                            
+                        }
 
 
                         break;
@@ -215,7 +227,7 @@ namespace T_I_
                         {
                             Console.WriteLine("\nPokemon de Origem: {0};Qtd de Pokemons originais Restantes: {1};Qtd Pokemons Evoluídos: {2};Pokemon evolui para: {3}; Qtd de candies restantes: {4}",
                                 mochilaEvoluida[i].pokemonOriginal, mochilaEvoluida[i].qtdPokemonRestantesOriginais,
-                                mochilaEvoluida[i].qtdPokemonEvoluídos, mochilaEvoluida[i].pokemonEvoluído, mochilaEvoluida[i].qtdCandiesRestantes);
+                                mochilaEvoluida[i].qtdPokemEvol, mochilaEvoluida[i].pokemonEvoluido, mochilaEvoluida[i].qtdCandiesRestantes);
                             Console.WriteLine();
                         }
                         break;
