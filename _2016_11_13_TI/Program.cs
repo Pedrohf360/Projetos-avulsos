@@ -110,7 +110,7 @@ namespace T_I_
 
 
         // MÉTODO PARA CONVERTER PARA INTEIRO
-        static void Converte(string[] candiesConverte, ref int[] candiesInt)
+        static void ConvStrToInt(string[] candiesConverte, ref int[] candiesInt)
         {
             candiesInt = new int[candiesConverte.Length];
             for (int i = 0; i < candiesConverte.Length; i++)
@@ -177,6 +177,22 @@ namespace T_I_
                     Console.Clear();
                 } while (!File.Exists(@nomeArq + ".txt"));
                 
+            }
+        }
+
+        static void ConvStructToArray(MochiUsuar[] structString, ref string[] arrayInt)
+        {
+            for (int i = 0; i < structString.Length; i++)
+            {
+                arrayInt[i] = structString[i].ToString();
+            }
+        }
+
+        static void ConvStructToArray(MochiDadosEvo[] structString, ref string[] arrayInt)
+        {
+            for (int i = 0; i < structString.Length; i++)
+            {
+                arrayInt[i] = structString[i].qtdCandies;
             }
         }
 
@@ -297,24 +313,15 @@ namespace T_I_
                         candiesDadosEvoInt = new int[contEvo];
                         qtdCandiesDados = new string[contEvo];
 
-                        // FOR's PARA PASSAR OS STRINGS DO STRUCT  PARA NOVOS ARRAYS
-                        for (int i = 0; i < mochiParaEvo.Length; i++)
-                        {
-                            qtdCandiesUsuar[i] = mochiParaEvo[i].qtdCandies;
-                        }
-                        for (int i = 0; i < mochiParaEvo.Length; i++)
-                        {
-                            qtdPokemUsuarStr[i] = mochiParaEvo[i].qtdPokem;
-                        }
-                        for (int i = 0; i < mochiDados.Length; i++)
-                        {
-                            qtdCandiesDados[i] = mochiDados[i].qtdCandies;
-                        }
-
+                        // FOR's PARA PASSAR OS STRINGS DO STRUCT PARA NOVOS ARRAYS
+                        ConvStructToArray(mochiParaEvo, ref qtdCandiesUsuar);
+                        ConvStructToArray(mochiParaEvo, ref qtdPokemUsuarStr);
+                        ConvStructToArray(mochiDados, ref qtdCandiesDados);
+                        
                         // CHAMA OS MÉTODOS PARA CONVERTER OS ARRAYS DOS CANDIES DE STRING PARA INT
-                        Converte(qtdCandiesUsuar, ref candiesUsuarInt);
-                        Converte(qtdCandiesDados, ref candiesDadosEvoInt);
-                        Converte(qtdPokemUsuarStr, ref qtdPokemUsuarInt);
+                        ConvStrToInt(qtdCandiesUsuar, ref candiesUsuarInt);
+                        ConvStrToInt(qtdCandiesDados, ref candiesDadosEvoInt);
+                        ConvStrToInt(qtdPokemUsuarStr, ref qtdPokemUsuarInt);
 
                         // AQUI COMEÇA O RITUAL DA PRIMEIRA EVOLUÇÃO
 
