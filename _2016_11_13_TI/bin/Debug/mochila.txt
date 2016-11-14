@@ -1,0 +1,4 @@
+Abra;0;100
+Bellsprout;3;50
+Bulbasaur;1;100
+Ivysaur;2;100
