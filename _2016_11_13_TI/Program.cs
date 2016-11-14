@@ -119,7 +119,6 @@ namespace T_I_
             }
         }
 
-
         // COUNTDOWN INICIAL
         private static int Contador = 5;
 
@@ -127,7 +126,7 @@ namespace T_I_
         {
             if (Contador >= 0)
             {
-                Console.SetCursorPosition(20, 13);
+                Console.SetCursorPosition(35, 11);
                 Console.WriteLine(String.Format("{0:00}", Contador));
                 Contador--;
             }
@@ -137,42 +136,22 @@ namespace T_I_
         static void Timer(string texto)
         {
             Timer stateTimer = new Timer(new TimerCallback(Tick), null, 0, 1000);
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(Contador*1000);
             Console.WriteLine(texto);
             
             Console.ReadLine();
             Console.Clear();
         }
 
-        static void MensagemRed(string texto)
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(texto);
-            Console.ResetColor();
-        }
-
-        static void MensagemGreen(string texto)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(texto);
-            Console.ResetColor();
-        }
-
-        static void MensagemGreen(string texto, int cont)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(texto, cont);
-            Console.ResetColor();
-        }
-
+        // Verifica se o arquivo existe
         static void ArqExiste(ref string nomeArq)
         {
             if (!File.Exists(@nomeArq + ".txt"))
             {
                 do
                 {
-                    MensagemRed("Nome da mochila não existe.\n");
-                    Console.WriteLine("Digite o nome da mochila evoluída: ");
+                    MensagemColor("Nome do arquivo inexistente!\n", "red");
+                    Console.WriteLine("Digite novamente: ");
                     nomeArq = Console.ReadLine();
                     Console.Clear();
                 } while (!File.Exists(@nomeArq + ".txt"));
@@ -180,23 +159,88 @@ namespace T_I_
             }
         }
 
-        static void ConvStructToArray(MochiUsuar[] structString, ref string[] arrayInt)
+        // MÉTODOS INTERFACE
+
+        static void MensagemColor(string texto, string nomeCor = "RED")
         {
-            for (int i = 0; i < structString.Length; i++)
-            {
-                arrayInt[i] = structString[i].ToString();
-            }
+            nomeCor = nomeCor.ToUpper();
+
+                if (nomeCor == "RED")
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(texto);
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(texto);
+                    Console.ResetColor();
+                }
         }
 
-        static void ConvStructToArray(MochiDadosEvo[] structString, ref string[] arrayInt)
+        static void MensagemColor(string texto, int cont, string nomeCor)
         {
-            for (int i = 0; i < structString.Length; i++)
-            {
-                arrayInt[i] = structString[i].qtdCandies;
-            }
+            MensagemColor(cont + " " + texto, nomeCor);
         }
 
-        static void Main(string[] args)
+        static int MenuInicial(int opcao)
+        {
+            int contWhile = 0, contCatch = 1;
+            
+            try
+            {
+                Console.WriteLine("\nDIGITE A OPÇÃO/ DESEJADA: \n\n1 - CARREGAR TABELA DE EVOLUÇÃO \n2 - CARREGAR MOCHILA \n3 - EVOLUIR MOCHILA \n4 - EXIBIR MOCHILA EVOLUÍDA \n0 - DIGITE '0' PARA SAIR");
+                opcao = int.Parse(Console.ReadLine());
+                if (opcao >= 0 && opcao <= 4) return opcao;
+            }
+            catch (Exception)
+            {
+                contCatch++;
+            }
+            while (contWhile < contCatch)
+            {
+                MensagemColor("\nDigite um valor numérico entre \"0\" e \"4\"");
+                Console.WriteLine("\nPressione qualquer tecla para continuar.");
+                Console.ReadKey(true);
+                Console.Clear();
+                contWhile++;
+                return MenuInicial(opcao);
+            }
+
+            return opcao;
+        }
+
+        static int MenuCase3(int opcao)
+        {
+            int contWhile = 0, contCatch = 1;
+
+            try
+            {
+                Console.WriteLine("Digite a opção desejada:\n\n1 - Apresentar pokémons evoluídos na tela.\n2 - Gravar pokémons evoluídos em arquivo. \n3 - Voltar ao menu inicial. \n0 - SAIR");
+                opcao = int.Parse(Console.ReadLine());
+                if (opcao >= 0 && opcao <= 3) return opcao;
+            }
+            catch (Exception)
+            {
+                contCatch++;
+            }
+            while (contWhile < contCatch)
+            {
+                MensagemColor("\nDigite um valor numérico entre \"0\" e \"3\"");
+                Console.WriteLine("\nPressione qualquer tecla para continuar.");
+                Console.ReadKey(true);
+                Console.Clear();
+                contWhile++;
+                return MenuCase3(opcao);
+            }
+
+            return opcao;
+        }
+        
+                            
+
+    static void Main(string[] args)
         {
             int opcao = 0, contEvo = 0, contMochi = 0, pos = 0;
             string texto = "", usuario = "", nomeArq = "";
@@ -209,100 +253,163 @@ namespace T_I_
             int[] candiesUsuarInt, candiesDadosEvoInt, qtdPokemUsuarInt;
 
             Console.SetWindowSize(70, 25);
+            string criador = "Programa criado por:"; // STRING CRIADA PARA UTILIZAR O COMPRIMENTO DA FRASE COMO PARÂMETRO PARA "NEW STRING", LOGO ABAIXO.
             Console.SetCursorPosition(24, 1);
-            Console.WriteLine("Programa criado por:");
+            Console.WriteLine(criador);
+            Console.SetCursorPosition(23, 2);
+            Console.WriteLine(new string('-', criador.Length + 2));
             Console.SetCursorPosition(19, 3);
-            Console.WriteLine("Ítalo Coura - Matrícula: 573962");
+            Console.WriteLine("-Ítalo Coura - Matrícula: 573962");
             Console.SetCursorPosition(18, 5);
-            Console.WriteLine("Pedro Henrique - Matrícula: 580544");
+            Console.WriteLine("-Pedro Henrique - Matrícula: 580544");
             Console.WriteLine(new String('-', 70));
             Console.SetCursorPosition(20, 7);
             Console.WriteLine("SISTEMAS DE INFORMAÇÃO - NOITE");
+            Console.WriteLine(new String('-', 70));
             Console.SetCursorPosition(20, 7);
-            Console.Write("\n\nEm 05 segundos se iniciará o Evolui Filezin.");
+            Console.Write("\n\nEm 05 segundos se iniciará o Evolui Filezin D+.");
 
-            Timer("Digite qualquer tecla para iniciar.");
+            Timer("\nPressione a tecla \"ENTER\" para iniciar.");
 
             do
             {
 
+                opcao = MenuInicial(opcao);
+
                 Console.Clear();
-                // SWITCH COM TODAS OPÇÕES
-                Console.WriteLine("\nDIGITE A OPÇÃO/ DESEJADA: \n\n1 - CARREGAR TABELA DE EVOLUÇÃO \n2 - CARREGAR MOCHILA \n3 - EVOLUIR MOCHILA \n4 - EXIBIR MOCHILA EVOLUÍDA \n0 - DIGITE '0' PARA SAIR");
-                opcao = int.Parse(Console.ReadLine());
-                Console.Clear();
+                    // SWITCH COM TODAS OPÇÕES
+                    switch (opcao)
+                    {
 
-                while (opcao < 0 || opcao > 5)
-                {
-                    Console.Clear();
-                    MensagemRed("\nOPÇÃO INVÁLIDA!");
-                    Console.WriteLine("\nDIGITE A OPÇÃO/ DESEJADA: \n1 - CARREGAR TABELA DE EVOLUÇÃO \n2 - CARREGAR MOCHILA \n3 - EVOLUIR MOCHILA \n4 - EXIBIR MOCHILA EVOLUIDA \n0 - DIGITE '0' PARA SAIR");
-                    opcao = int.Parse(Console.ReadLine());
+                        // OPÇÃO PARA CARREGAR MOCHILA COM OS DADOS PARA EVOLUÇÃO
+                        case 1:
+                            texto = LerEvo(ref contEvo);
+                            Split(texto, ref evoSplit);
 
-                    Console.Clear();
-                }
+                            Console.Write(texto + "\n");
+                            Console.WriteLine(new string('-', 50));
+                            MensagemColor("Pokémons carregados com sucesso!", contEvo, "green");
+                            Console.WriteLine("\nPressione qualquer tecla para continuar.", true);
+                            Console.ReadKey();
+                            Console.Clear();
 
-                switch (opcao)
-                {
+                            pos = 0;
+                            // CARREGA AS POSIÇÕES DO STRUCT DA MOCHILA DADOS (A BASE DE COMPARAÇÃO) COM OS POKEMONS SPLITADOS
+                            for (int i = 0; i < mochiDados.Length * 3; i += 3)
+                            {
+                                mochiDados[pos].pokemOrig = evoSplit[i];
+                                mochiDados[pos].qtdCandies = evoSplit[i + 1];
+                                mochiDados[pos].pokemEvol = evoSplit[i + 2];
+                                pos++;
+                            }
+                            break;
 
-                    // OPÇÃO PARA CARREGAR MOCHILA COM OS DADOS PARA EVOLUÇÃO
-                    case 1:
-                        texto = LerEvo(ref contEvo);
-                        Split(texto, ref evoSplit);
+                        // OPÇÃO PARA CARREGAR MOCHILA COM OS POKEMONS DO USUÁRIO
+                        case 2:
+                            Console.WriteLine("Digite o nome da mochila para ser carregada: ");
+                            texto = Console.ReadLine();
+                            Console.Clear();
 
-                        Console.Write(texto + "\n");
-                        Console.WriteLine(new string('-', 50));
-                        MensagemGreen("{0} Pokémons carregados com sucesso!", contEvo);
-                        Console.WriteLine("\nAperte qualquer tecla para continuar.", true);
-                        Console.ReadKey();
-                        Console.Clear();
+                            ArqExiste(ref texto);
+                            Console.WriteLine();
 
-                        pos = 0;
-                        // CARREGA AS POSIÇÕES DO STRUCT DA MOCHILA DADOS (A BASE DE COMPARAÇÃO) COM OS POKEMONS SPLITADOS
-                        for (int i = 0; i < mochiDados.Length * 3; i += 3)
-                        {
-                            mochiDados[pos].pokemOrig = evoSplit[i];
-                            mochiDados[pos].qtdCandies = evoSplit[i + 1];
-                            mochiDados[pos].pokemEvol = evoSplit[i + 2];
-                            pos++;
-                        }
-                        break;
+                            texto = LerMochi(texto, ref contMochi, ref usuario);
+                            Split(usuario, ref mochiSplit);
 
-                    // OPÇÃO PARA CARREGAR MOCHILA COM OS POKEMONS DO USUÁRIO
-                    case 2:
-                        Console.WriteLine("Digite o nome da mochila para ser carregada: ");
-                        texto = Console.ReadLine();
-                        Console.Clear();
+                            Console.Write(texto + "\n");
+                            Console.WriteLine(new string('-', 50));
+                            MensagemColor("Pokémons carregados com sucesso!",contMochi, "green");
+                            Console.WriteLine("\nPressione qualquer tecla para continuar.", true);
+                            Console.ReadKey();
+                            Console.Clear();
 
-                        ArqExiste(ref texto);
-                        Console.WriteLine();
+                            pos = 0;
 
-                        texto = LerMochi(texto, ref contMochi, ref usuario);
-                        Split(usuario, ref mochiSplit);
+                            // mochiParaEvo = new MochiUsuar[contEvo];
+                            mochiParaEvo = new MochiUsuar[mochiSplit.Length / 3];
 
-                        Console.Write(texto + "\n");
-                        Console.WriteLine(new string('-', 50));
-                        MensagemGreen("{0} Pokémons carregados com sucesso!", contMochi);
-                        Console.WriteLine("\nAperte qualquer tecla para continuar.", true);
-                        Console.ReadKey();
-                        Console.Clear();
-
-                        pos = 0;
-
-                        // mochiParaEvo = new MochiUsuar[contEvo];
-                        mochiParaEvo = new MochiUsuar[mochiSplit.Length / 3];
-
-                        // CARREGA AS POSIÇÕES DO STRUCT DA MOCHILA DO USUÁRIO(QUE SERÁ EVOLUÍDA) COM OS POKEMONS SPLITADOS
-                        for (int i = 0; i < mochiParaEvo.Length * 3; i += 3)
-                        {
-                            mochiParaEvo[pos].pokem = mochiSplit[i];
-                            mochiParaEvo[pos].qtdPokem = mochiSplit[i + 1];
-                            mochiParaEvo[pos].qtdCandies = mochiSplit[i + 2];
-                            pos++;
-                        }
-                        break;
+                            // CARREGA AS POSIÇÕES DO STRUCT DA MOCHILA DO USUÁRIO (QUE SERÁ EVOLUÍDA) COM OS POKEMONS SPLITADOS
+                            for (int i = 0; i < mochiParaEvo.Length * 3; i += 3)
+                            {
+                                mochiParaEvo[pos].pokem = mochiSplit[i];
+                                mochiParaEvo[pos].qtdPokem = mochiSplit[i + 1];
+                                mochiParaEvo[pos].qtdCandies = mochiSplit[i + 2];
+                                pos++;
+                            }
+                            break;
 
                     case 3:
+                        //TRATAMENTO DE ERRO SE O USUÁRIO NAO CARREGAR UMA OU OUTRA MOCHILA
+                        for (int a = 0; a < 1; a++)
+                        {
+                            if (mochiDados[a].pokemOrig == null)
+                            {
+
+                                texto = LerEvo(ref contEvo);
+                                Split(texto, ref evoSplit);
+
+                                Console.Write(texto + "\n");
+                                Console.WriteLine(new string('-', 50));
+                                MensagemColor("TABELA DE EVOLUÇÃO de comparação não carregada!");
+                                MensagemColor("\nCALMA!!! Fizemos isto para você!\n");
+                                MensagemColor("Pokémons carregados com sucesso!", contEvo, "green");
+                                Console.WriteLine("\nPressione qualquer tecla para continuar.", true);
+                                Console.ReadKey();
+                                Console.Clear();
+
+
+                                // CARREGA AS POSIÇÕES DO STRUCT DA MOCHILA DADOS (A BASE DE COMPARAÇÃO) COM OS POKEMONS SPLITADOS
+                                pos = 0;
+                                for (int i = 0; i < mochiDados.Length * 3; i += 3)
+                                {
+                                    mochiDados[pos].pokemOrig = evoSplit[i];
+                                    mochiDados[pos].qtdCandies = evoSplit[i + 1];
+                                    mochiDados[pos].pokemEvol = evoSplit[i + 2];
+                                    pos++;
+                                }
+                                break;
+                            }
+                        }
+
+                        for (int p = 0; p < 1; p++)
+                        {
+                            if (mochiParaEvo == null)
+                            {
+                                MensagemColor("Mochila do USUÁRIO não carregada.");
+                                MensagemColor("\nCALMA!!! Pode fazer isto agora!");
+                                Console.WriteLine("\nDigite o nome da mochila para ser carregada: ");
+                                texto = Console.ReadLine();
+                                Console.Clear();
+
+                                ArqExiste(ref texto);
+                                Console.WriteLine();
+
+                                texto = LerMochi(texto, ref contMochi, ref usuario);
+                                Split(usuario, ref mochiSplit);
+
+                                Console.Write(texto + "\n");
+                                Console.WriteLine(new string('-', 50));
+                                MensagemColor("Pokémons carregados com sucesso!", contMochi, "green");
+                                Console.WriteLine("\nPressione qualquer tecla para continuar.", true);
+                                Console.ReadKey();
+                                Console.Clear();
+
+                                pos = 0;
+
+                                // mochiParaEvo = new MochiUsuar[contEvo];
+                                mochiParaEvo = new MochiUsuar[mochiSplit.Length / 3];
+
+                                // CARREGA AS POSIÇÕES DO STRUCT DA MOCHILA DO USUÁRIO (QUE SERÁ EVOLUÍDA) COM OS POKEMONS SPLITADOS
+                                for (int i = 0; i < mochiParaEvo.Length * 3; i += 3)
+                                {
+                                    mochiParaEvo[pos].pokem = mochiSplit[i];
+                                    mochiParaEvo[pos].qtdPokem = mochiSplit[i + 1];
+                                    mochiParaEvo[pos].qtdCandies = mochiSplit[i + 2];
+                                    pos++;
+                                }
+                            }
+                        }
+
                         // INICIALIZAÇÃO ARRAYS MOCHILA USUÁRIO
                         candiesUsuarInt = new int[contMochi];
                         qtdPokemUsuarInt = new int[contMochi];
@@ -314,10 +421,19 @@ namespace T_I_
                         qtdCandiesDados = new string[contEvo];
 
                         // FOR's PARA PASSAR OS STRINGS DO STRUCT PARA NOVOS ARRAYS
-                        ConvStructToArray(mochiParaEvo, ref qtdCandiesUsuar);
-                        ConvStructToArray(mochiParaEvo, ref qtdPokemUsuarStr);
-                        ConvStructToArray(mochiDados, ref qtdCandiesDados);
-                        
+                        for (int i = 0; i < mochiParaEvo.Length; i++)
+                        {
+                            qtdCandiesUsuar[i] = mochiParaEvo[i].qtdCandies;
+                        }
+                        for (int i = 0; i < mochiParaEvo.Length; i++)
+                        {
+                            qtdPokemUsuarStr[i] = mochiParaEvo[i].qtdPokem;
+                        }
+                        for (int i = 0; i < mochiDados.Length; i++)
+                        {
+                            qtdCandiesDados[i] = mochiDados[i].qtdCandies;
+                        }
+
                         // CHAMA OS MÉTODOS PARA CONVERTER OS ARRAYS DOS CANDIES DE STRING PARA INT
                         ConvStrToInt(qtdCandiesUsuar, ref candiesUsuarInt);
                         ConvStrToInt(qtdCandiesDados, ref candiesDadosEvoInt);
@@ -337,10 +453,10 @@ namespace T_I_
                                     naoEvo[i].qtdPokem = qtdPokemUsuarInt[i];
                                     continue;
                                 }
-                                // SE O POKEMON EVOLUI, ESTE ELSE IF SERVE PARA MOSTRAR QUE ENCONTROU O POKEMON DO USUÁRIO NA MOCHILA PARA COMPARAR
+                                // SE O POKEMON EVOLUI, ESTE ELSE IF MOSTRAR QUE ENCONTROU O POKEMON DO USUÁRIO NA MOCHILA PARA COMPARAR
                                 else if (mochiParaEvo[i].pokem == mochiDados[j].pokemOrig)
                                 {
-                                    // VERIFICA SE TEM QUANTIDADE DECANDIES SUFICIENTE PARA A EVOLUÇÃO, SE NÃO TIVER, GUARDA NA MOCHILA nãoEvo
+                                    // VERIFICA SE TEM QUANTIDADE DECANDIES SUFICIENTE PARA A EVOLUÇÃO, SE NÃO TIVER, GUARDA NA MOCHILA naoEvo
                                     if (candiesUsuarInt[i] < candiesDadosEvoInt[j])
                                     {
                                         naoEvo[i].nomePokem = mochiParaEvo[i].pokem;
@@ -421,24 +537,13 @@ namespace T_I_
                         }
                         Console.Clear();
 
-                        MensagemGreen("Pokémons evoluídos com sucesso!\n");
+                        MensagemColor("Pokémons evoluídos com sucesso!\n", "green");
 
                         do
                         {
-                            Console.WriteLine("Digite a opção desejada:\n1 - Apresentar pokémons evoluídos na tela.\n2 - Gravar pokémons evoluídos em arquivo. \n3 - Voltar ao menu inicial. \n0 - SAIR");
-                            opcao = int.Parse(Console.ReadLine());
-                            Console.WriteLine();
-                            while (opcao < 0 || opcao > 3)
+                            opcao = MenuCase3(opcao);
 
-                            {
-                                Console.Clear();
-                                MensagemRed("\nOPÇÃO INVÁLIDA!");
-                                Console.WriteLine("\nDigite a opção desejada:\n1 - Apresentar pokémons evoluídos na tela.\n2 - Gravar pokémons evoluídos em arquivo. \n3 - Voltar ao menu inicial. \n0 - SAIR");
-                                opcao = int.Parse(Console.ReadLine());
-                                Console.WriteLine();
-                                Console.Clear();
-                            }
-
+                            Console.Clear();
                             switch (opcao)
                             {
                                 case 1:
@@ -454,7 +559,7 @@ namespace T_I_
                                             Console.WriteLine("{0};{1};{2}", naoEvo[i].nomePokem, naoEvo[i].qtdPokem, naoEvo[i].qtdCandies);
                                     }
 
-                                    Console.WriteLine("\nAperte qualquer tecla para continuar.", true);
+                                    Console.WriteLine("\nPressione qualquer tecla para continuar.", true);
 
                                     Console.ReadKey();
                                     Console.Clear();
@@ -466,54 +571,57 @@ namespace T_I_
 
                                     Console.Write("Digite o nome do arquivo a ser criado: ");
                                     nomeArq = Console.ReadLine();
-                                    StreamWriter txt = new StreamWriter(@nomeArq + ".txt");
-                                    for (int u = 0; u < mochiFinal.Length; u++)
+                                    using (StreamWriter txt = new StreamWriter(@nomeArq + ".txt"))
                                     {
-                                        if (mochiFinal[u].nomePokem != null)
+
+                                        for (int u = 0; u < mochiFinal.Length; u++)
                                         {
-                                            txt.Write(mochiFinal[u].nomePokem + ";");
-                                            txt.Write(mochiFinal[u].qtdPokem + ";");
-                                            txt.Write(mochiFinal[u].qtdCandies + "\r\n");
+                                            if (mochiFinal[u].nomePokem != null)
+                                            {
+                                                txt.Write(mochiFinal[u].nomePokem + ";");
+                                                txt.Write(mochiFinal[u].qtdPokem + ";");
+                                                txt.Write(mochiFinal[u].qtdCandies + "\r\n");
+                                            }
                                         }
-                                    }
-                                    for (int u = 0; u < naoEvo.Length; u++)
-                                    {
-                                        if (naoEvo[u].nomePokem != null)
+                                        for (int u = 0; u < naoEvo.Length; u++)
                                         {
-                                            txt.Write(naoEvo[u].nomePokem + ";");
-                                            txt.Write(naoEvo[u].qtdPokem + ";");
-                                            txt.Write(naoEvo[u].qtdCandies + "\r\n");
+                                            if (naoEvo[u].nomePokem != null)
+                                            {
+                                                txt.Write(naoEvo[u].nomePokem + ";");
+                                                txt.Write(naoEvo[u].qtdPokem + ";");
+                                                txt.Write(naoEvo[u].qtdCandies + "\r\n");
+                                            }
                                         }
+                                        txt.Close();
                                     }
-                                    txt.Close();
                                     Console.Clear();
-                                    MensagemGreen("{0} Pokémons carregados com sucesso!", contMochi);
+                                    MensagemColor("Pokémons carregados com sucesso!", contMochi, "green");
                                     Console.WriteLine();
                                     break;
                             }
-                        } while (opcao != 3 && opcao != 0);
+                        } while (opcao != 0 && opcao != 3);
 
                         Console.Clear();
                         break;
 
                     //APRESENTAR MOCHILA JÁ CRIADA NA TELA
                     case 4:
-                        Console.WriteLine("Digite o nome da mochila evoluída: ");
-                        texto = Console.ReadLine();
-                        Console.Clear();
+                            Console.WriteLine("Digite o nome da mochila evoluída: ");
+                            texto = Console.ReadLine();
+                            Console.Clear();
 
-                        ArqExiste(ref texto);
+                            ArqExiste(ref texto);
 
-                        Console.WriteLine("Mochila evoluída: \n");
-                        texto = LerMochi(nomeArq, ref contMochi, ref usuario);
-                        Console.WriteLine(texto);
+                            Console.WriteLine("Mochila evoluída: \n");
+                            texto = LerMochi(nomeArq, ref contMochi, ref usuario);
+                            Console.WriteLine(texto);
 
-                        Console.WriteLine("Digite qualquer tecla para voltar ao menu inicial.");
-                        Console.ReadKey();
-                    break;
-                }
+                            Console.WriteLine("Digite qualquer tecla para voltar ao menu inicial.");
+                            Console.ReadKey();
+                            break;
+                    }
 
-            } while (opcao != 0);
+                } while (opcao != 0);
         }
     }
 }
