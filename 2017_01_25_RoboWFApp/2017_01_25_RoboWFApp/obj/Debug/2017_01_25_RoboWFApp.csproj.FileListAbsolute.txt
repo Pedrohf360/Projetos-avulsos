@@ -1,0 +1,9 @@
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\bin\Debug\2017_01_25_RoboWFApp.exe.config
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\bin\Debug\2017_01_25_RoboWFApp.exe
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\bin\Debug\2017_01_25_RoboWFApp.pdb
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.csprojResolveAssemblyReference.cache
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\_2017_01_25_RoboWFApp.Form1.resources
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\_2017_01_25_RoboWFApp.Properties.Resources.resources
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.csproj.GenerateResource.Cache
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.exe
+E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.pdb
