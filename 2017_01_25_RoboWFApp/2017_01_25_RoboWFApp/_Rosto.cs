@@ -25,14 +25,14 @@ namespace _2017_01_25_RoboWFApp
         {
             olhoEsquerdo.FecharOlho();
             olhoDireito.FecharOlho();
-            estado = " ----- ";
+            estado = " _________ ";
         }
 
         public void Desconfiar()
         {
             olhoDireito.FecharOlho();
             olhoEsquerdo.AbrirOlho();
-            estado = "~-~-~-~";
+            estado = "~~~~~~~~~";
         }
 
         public Rosto()

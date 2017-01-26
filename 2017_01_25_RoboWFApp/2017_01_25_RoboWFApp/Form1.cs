@@ -12,27 +12,43 @@ namespace _2017_01_25_RoboWFApp
 {
     public partial class Form1 : Form
     {
-        Rosto robo1 = new Rosto();
+        Rosto meuRosto;
 
         public Form1()
         {
             InitializeComponent();
+
+            meuRosto = new Rosto();
+
+            meuRosto.Feliz(); // Realmente precisa? (No construtor já tem Feliz());
+        }
+
+        public void Ajustar()
+        {
+            btOlhoDireito.Text = meuRosto.olhoDireito.estado;
+            btOlhoEsquerdo.Text = meuRosto.olhoEsquerdo.estado;
+            btBoca.Text = meuRosto.estado;
         }
 
         private void btFeliz_Click(object sender, EventArgs e)
         {
-            robo1.Feliz();
+            meuRosto.Feliz();
+
+            Ajustar();
         }
 
         private void btTriste_Click(object sender, EventArgs e)
         {
-            robo1.Triste();
+            meuRosto.Triste();
+
+            Ajustar();   
         }
 
         private void btDesconfiado_Click(object sender, EventArgs e)
         {
+            meuRosto.Desconfiar();
 
-              //  robo1.Desconfiar();
+            Ajustar();
         }
 
     }

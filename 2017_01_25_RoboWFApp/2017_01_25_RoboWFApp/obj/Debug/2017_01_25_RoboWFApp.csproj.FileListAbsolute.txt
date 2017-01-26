@@ -7,3 +7,12 @@ E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_Robo
 E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.csproj.GenerateResource.Cache
 E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.exe
 E:\Autodidata\Visual Studio\Amazing-Progams\2017_01_25_RoboWFApp\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.pdb
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\bin\Debug\2017_01_25_RoboWFApp.exe.config
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.exe
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.pdb
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\bin\Debug\2017_01_25_RoboWFApp.exe
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\bin\Debug\2017_01_25_RoboWFApp.pdb
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.csprojResolveAssemblyReference.cache
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\obj\Debug\_2017_01_25_RoboWFApp.Form1.resources
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\obj\Debug\_2017_01_25_RoboWFApp.Properties.Resources.resources
+F:\Estudos autônomos\C#\Otavino Mota\Aula 14 - Continuação ROBÔ\2017_01_25_RoboWFApp\obj\Debug\2017_01_25_RoboWFApp.csproj.GenerateResource.Cache

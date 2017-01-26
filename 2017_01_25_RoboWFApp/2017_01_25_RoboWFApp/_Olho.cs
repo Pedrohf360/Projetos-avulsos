@@ -18,7 +18,7 @@ namespace _2017_01_25_RoboWFApp
 
         public void FecharOlho()
         {
-            estado = "___"; 
+            estado = "---"; 
         }
 
         public void PiscarOlho()
