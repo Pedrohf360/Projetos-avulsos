@@ -7,3 +7,12 @@ C:\Users\Pedrohf360\documents\visual studio 2012\Projects\2017_01_20_Calculadora
 C:\Users\Pedrohf360\documents\visual studio 2012\Projects\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\2017_01_20_Calculadora.csproj.GenerateResource.Cache
 C:\Users\Pedrohf360\documents\visual studio 2012\Projects\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\2017_01_20_Calculadora.exe
 C:\Users\Pedrohf360\documents\visual studio 2012\Projects\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\2017_01_20_Calculadora.pdb
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\bin\Debug\2017_01_20_Calculadora.exe.config
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\2017_01_20_Calculadora.exe
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\2017_01_20_Calculadora.pdb
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\bin\Debug\2017_01_20_Calculadora.exe
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\bin\Debug\2017_01_20_Calculadora.pdb
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\2017_01_20_Calculadora.csprojResolveAssemblyReference.cache
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\_2017_01_20_Calculadora.Form1.resources
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\_2017_01_20_Calculadora.Properties.Resources.resources
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_01_20_Calculadora\2017_01_20_Calculadora\obj\Debug\2017_01_20_Calculadora.csproj.GenerateResource.Cache
