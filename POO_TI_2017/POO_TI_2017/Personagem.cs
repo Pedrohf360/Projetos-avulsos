@@ -11,6 +11,7 @@ namespace POO_TI
     {
         static Random r = new Random();
 
+        protected int direcao; // 1: Esquerda; 2: Cima; 3: Direita; 4: Baixo.
         protected int velocidade;
         BulletWorld formWorld;
 
@@ -18,6 +19,7 @@ namespace POO_TI
         {
             setPos(600, 300);
             this.velocidade = 2;
+
         }
 
         public void setVelocidade(int vel)
