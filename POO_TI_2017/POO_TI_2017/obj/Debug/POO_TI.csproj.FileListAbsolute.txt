@@ -1,0 +1,2 @@
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
