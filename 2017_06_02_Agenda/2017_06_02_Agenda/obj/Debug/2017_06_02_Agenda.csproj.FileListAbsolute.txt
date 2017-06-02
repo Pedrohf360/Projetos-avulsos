@@ -1,0 +1,14 @@
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\bin\Debug\2017_06_02_Agenda.exe.config
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\bin\Debug\2017_06_02_Agenda.exe
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\bin\Debug\2017_06_02_Agenda.pdb
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\obj\Debug\_2017_06_02_Agenda.Form1.resources
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\obj\Debug\_2017_06_02_Agenda.Properties.Resources.resources
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\obj\Debug\2017_06_02_Agenda.csproj.GenerateResource.Cache
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\obj\Debug\2017_06_02_Agenda.exe
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\obj\Debug\2017_06_02_Agenda.pdb
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\bin\Debug\AgendaDB.sdf
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\obj\Debug\2017_06_02_Agenda.csprojResolveAssemblyReference.cache
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\bin\Debug\2017_06_02_Agenda.exe.manifest
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\bin\Debug\2017_06_02_Agenda.application
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\obj\Debug\2017_06_02_Agenda.exe.manifest
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\2017_06_02_Agenda\2017_06_02_Agenda\obj\Debug\2017_06_02_Agenda.application

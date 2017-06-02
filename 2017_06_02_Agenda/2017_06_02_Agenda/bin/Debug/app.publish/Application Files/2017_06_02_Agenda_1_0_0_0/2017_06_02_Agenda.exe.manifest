@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="2017_06_02_Agenda.exe" version="1.0.0.0" publicKeyToken="7bdc7ca31f9ad1b7" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="2017_06_02_Agenda" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="2017_06_02_Agenda.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.SqlServerCe" version="4.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="2017_06_02_Agenda.exe" size="105984">
+      <assemblyIdentity name="2017_06_02_Agenda" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DVcsCAvJmmPo1kOhwOAX7A7mzMfRuznbnQZ0PUrQcvo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="2017_06_02_Agenda.exe.config" size="505">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aQ5Vb9oDVjQuODEaujtqN45732sitR5Q/7jZ0Vzmz00=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="AgendaDB.sdf" size="86016" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UJG17Sr9GzSdl4jYqBBsSQ9CMnvCOLEDp8h7d9k6KjU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MURDOCK\Pedrohf360" issuerKeyHash="39903dd3078f8734deb532545a9194d66abdbc3c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3UIn5ijkThmHtps16rItE7usfYcCrJhUOXZ+bLdfOkw=</DigestValue></Reference></SignedInfo><SignatureValue>Eln7HVotymK8Y70IzIxabwoFfSCZl4ZOn+EkFOXiPb1Qr41ZkNdAN/XegcUcwy+nTfA4FSzYtLd5/IfYkcAGtIqx8ePtpejkOvhs+X3ZAlnzfOtISuk4dNFdwAePPkVq42pyQQMFQetFc6+vglmIJngDZ29Hjc2ET6oyMXHQhj8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>slL5mZ+0ii0i7Le+4WbZblhuHwRCKbLl8UD1jCsUfvXXiDiYhkg60Jqzomry0B1Gu2l1ZIb9W9DpAWITuiDyMjO77DDDkm2B+EqwawbwuUTfAk82HwzBKBsIc7xzDm23eDmi09B8WuCETjIzu4w0lBlsn0TLvEwsqNuMed+HwXs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4c3a5fb76c7e76395498ac02877dacbb132db2ea359bb687194ee428e62742dd" Description="" Url=""><as:assemblyIdentity name="2017_06_02_Agenda.exe" version="1.0.0.0" publicKeyToken="7bdc7ca31f9ad1b7" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MURDOCK\Pedrohf360</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VP/klPZiHfcYnufL0+FEB203npliYcMuk/QlY4YxXuQ=</DigestValue></Reference></SignedInfo><SignatureValue>V8o920gVWHTvAdwTAzmWUGSabcwCFFjH6ShREy2Dbu+QnLn2zu57zr4rlrAMXAuYDWA8uTe1XPye+bLg8IRleO9UKlK6tLaN0Cnxy6wwOI6SRJfEnT8JVzNs5swWUmyye0vHZLK6fXIJ55mF4CxOGJKOMShA5262Jf3YcOD+oYg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>slL5mZ+0ii0i7Le+4WbZblhuHwRCKbLl8UD1jCsUfvXXiDiYhkg60Jqzomry0B1Gu2l1ZIb9W9DpAWITuiDyMjO77DDDkm2B+EqwawbwuUTfAk82HwzBKBsIc7xzDm23eDmi09B8WuCETjIzu4w0lBlsn0TLvEwsqNuMed+HwXs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQVW8NQNXdFolEOEQVbjQiLzANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQATQBVAFIARABPAEMASwBcAFAAZQBkAHIAbwBoAGYAMwA2ADAwHhcNMTcwNjAyMTc0NDU4WhcNMTgwNjAyMjM0NDU4WjAvMS0wKwYDVQQDHiQATQBVAFIARABPAEMASwBcAFAAZQBkAHIAbwBoAGYAMwA2ADAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALJS+ZmftIotIuy3vuFm2W5Ybh8EQimy5fFA9YwrFH7114g4mIZIOtCas6Jq8tAdRrtpdWSG/VvQ6QFiE7og8jIzu+www5JtgfhKsGsG8LlE3wJPNh8MwSgbCHO8cw5tt3g5otPQfFrghE4yM7uMNJQZbJ9Ey7xMLKjbjHnfh8F7AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAaKzUREpHqEl4A6Xx4Dp6zlKtI4yL95z4FtoxO3Jtu1Yd+S8WLoBPvaODUBroPTCbOIENs7mAygiPLKAiHQ+azgCveMe2GFJy0cjAOce1crDoU0y7LfRV7Cw6AkxdfOku5HzRkkMCSuLzNmzFOhp+PR1WO3dwjhluw5E0xCiqSKk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
