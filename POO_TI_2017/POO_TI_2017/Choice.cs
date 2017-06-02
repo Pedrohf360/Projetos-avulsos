@@ -16,8 +16,14 @@ namespace POO_TI
             InitializeComponent();
         }
 
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            
             BulletWorld jogo = null;
             new BulletWorld(4);
 
@@ -37,17 +43,19 @@ namespace POO_TI
             {
                 jogo = new BulletWorld(4);
             }
+            else if (radioButton5.Checked)
+            {
+                jogo = new BulletWorld(5);
+            }
+            else if (radioButton6.Checked)
+            {
+                jogo = new BulletWorld(6);
+            }
 
             jogo.Show();
-
         }
 
         private void Choice_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

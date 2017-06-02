@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
 namespace POO_TI
 {
-
-    class CheepCheep : Personagem
+    class Dibrador : Personagem
     {
-        public CheepCheep(BulletWorld b)
+
+        public Dibrador(BulletWorld b)
             : base(b)
         {
-            setFigura(ComeBullet.Properties.Resources.cheepcheep0);
+            setFigura(POO_TI_2017.Properties.Resources.dibrador0);
             setDirecao(3); // Esquerda. 
             setVelocidade(3);
         }
@@ -27,20 +26,21 @@ namespace POO_TI
 
             switch (dir)
             {
+                // Indo p/ esquerda (1 = seta p/ esquerda: esquerda desce; 2 = seta p/ cima: esquerda sobe).
                 case 1:
-                    setFigura(ComeBullet.Properties.Resources.cheepcheep3);
+                    setFigura(POO_TI_2017.Properties.Resources.dibrador1);
                     break;
 
                 case 2:
-                    setFigura(ComeBullet.Properties.Resources.cheepcheep0);
+                    setFigura(POO_TI_2017.Properties.Resources.dibrador1);
                     break;
-
+                // Indo p/ direita (3 = seta p/ direita: direita sobe; 4 = seta p/ baixo: direita desce).
                 case 3:
-                    setFigura(ComeBullet.Properties.Resources.cheepcheep1);
+                    setFigura(POO_TI_2017.Properties.Resources.dibrador0);
                     break;
 
                 case 4:
-                    setFigura(ComeBullet.Properties.Resources.cheepcheep2);
+                    setFigura(POO_TI_2017.Properties.Resources.dibrador0);
                     break;
             }
         }
@@ -53,20 +53,21 @@ namespace POO_TI
         {
             switch (direcao)
             {
+                // Indo p/ esquerda (1 = seta p/ esquerda: esquerda desce; 2 = seta p/ cima: esquerda sobe).
                 case 1:
-                    setPos(posX-velocidade, getY());
+                    setPos(posX - velocidade, posY + velocidade);
                     break;
 
                 case 2:
-                    setPos(getX(), posY-velocidade);
+                    setPos(posX - velocidade, posY - velocidade);
                     break;
-
+                // Indo p/ direita (3 = seta p/ direita: direita sobe; 4 = seta p/ baixo: direita desce).
                 case 3:
-                    setPos(posX+velocidade, getY());
+                    setPos(posX + velocidade, posY - velocidade);
                     break;
 
                 case 4:
-                    setPos(getX(), posY+velocidade);
+                    setPos(posX + velocidade, posY + velocidade);
                     break;
             }
         }

@@ -8,12 +8,78 @@ C:\Users\Cabongue\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properti
 C:\Users\Cabongue\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
 C:\Users\Cabongue\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
 C:\Users\Cabongue\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.exe
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.pdb
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
-C:\Users\1045301\Downloads\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\henri\Desktop\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\henri\Desktop\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\henri\Desktop\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\henri\Desktop\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\henri\Desktop\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\henri\Desktop\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
+C:\Users\henri\Desktop\1225292_POO_TI_2017_base\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI_2017\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI_2017\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI_2017\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI_2017\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI_2017\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI_2017\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI_2017\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\henrique\Desktop\POO_TI_DEFITIVO\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\henrique\Desktop\POO_TI_DEFITIVO\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\henrique\Desktop\POO_TI_DEFITIVO\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\henrique\Desktop\POO_TI_DEFITIVO\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\henrique\Desktop\POO_TI_DEFITIVO\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\henrique\Desktop\POO_TI_DEFITIVO\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
+C:\Users\henrique\Desktop\POO_TI_DEFITIVO\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.exe
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_1.2\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.pdb
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.exe
+C:\Users\henrique\Desktop\POO_TI_1.3\POO_TI\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.pdb
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.exe
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.pdb
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
+C:\Users\henrique\Desktop\POO_TI\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.exe
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.pdb
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
+C:\Users\henri\OneDrive\matemática discreta\visual studio 2015\Projects\POO_TI\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.exe
+C:\Users\FABRICIO\Desktop\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.pdb
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.exe
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.pdb
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csprojResolveAssemblyReference.cache
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.BulletWorld.resources
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI.Choice.resources
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.csproj.GenerateResource.Cache
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.exe
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\bin\Debug\POO_TI_2017.pdb
+C:\Users\Pedrohf360\Documents\Visual Studio 2012\Amazing-Programs\POO_TI_2017\POO_TI_2017\obj\Debug\POO_TI_2017.Properties.Resources.resources

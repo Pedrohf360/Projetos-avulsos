@@ -50,9 +50,10 @@
             this.timeLabel.AutoSize = true;
             this.timeLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.ForeColor = System.Drawing.Color.Teal;
-            this.timeLabel.Location = new System.Drawing.Point(619, 9);
+            this.timeLabel.Location = new System.Drawing.Point(825, 11);
+            this.timeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(81, 19);
+            this.timeLabel.Size = new System.Drawing.Size(98, 23);
             this.timeLabel.TabIndex = 0;
             this.timeLabel.Text = "00:00:00";
             // 
@@ -62,21 +63,21 @@
             // 
             // BulletWorld
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(704, 431);
+            this.ClientSize = new System.Drawing.Size(939, 530);
             this.ControlBox = false;
             this.Controls.Add(this.timeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BulletWorld";
             this.Text = "BulletEater";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
-            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.BulletWorld_PreviewKeyDown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
