@@ -59,5 +59,10 @@ namespace POO_TI
         {
 
         }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

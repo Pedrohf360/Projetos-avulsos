@@ -81,7 +81,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(237, 302);
+            this.button1.Location = new System.Drawing.Point(238, 296);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 43);
             this.button1.TabIndex = 4;
@@ -115,18 +115,19 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(455, 254);
+            this.radioButton6.Location = new System.Drawing.Point(430, 254);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(128, 26);
+            this.radioButton6.Size = new System.Drawing.Size(148, 26);
             this.radioButton6.TabIndex = 12;
-            this.radioButton6.Text = "Left Mario";
+            this.radioButton6.Text = "Crazy Bender";
             this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(455, 122);
+            this.radioButton5.Location = new System.Drawing.Point(449, 122);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(108, 26);
             this.radioButton5.TabIndex = 10;
@@ -135,20 +136,21 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::POO_TI_2017.Properties.Resources.Leftmario0;
-            this.pictureBox5.Location = new System.Drawing.Point(483, 159);
+            this.pictureBox5.BackColor = System.Drawing.Color.Yellow;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(468, 154);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(54, 93);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.Size = new System.Drawing.Size(70, 103);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 11;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(412, 5);
+            this.pictureBox6.Location = new System.Drawing.Point(409, 12);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(186, 123);
+            this.pictureBox6.Size = new System.Drawing.Size(179, 116);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
@@ -156,7 +158,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::POO_TI_2017.Properties.Resources.Leftmario0;
-            this.pictureBox4.Location = new System.Drawing.Point(297, 159);
+            this.pictureBox4.Location = new System.Drawing.Point(299, 159);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(54, 93);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -166,7 +168,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::POO_TI_2017.Properties.Resources.blooper0;
-            this.pictureBox3.Location = new System.Drawing.Point(78, 159);
+            this.pictureBox3.Location = new System.Drawing.Point(78, 166);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 77);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -186,7 +188,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::POO_TI_2017.Properties.Resources.cheepcheep1;
-            this.pictureBox1.Location = new System.Drawing.Point(78, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(78, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

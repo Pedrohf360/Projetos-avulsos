@@ -60,6 +60,9 @@ namespace POO_TI
                     case 5: //dibrador
                         goPersonagem = new Dibrador(this);
                         break;
+                    case 6:
+                        goPersonagem = new Bender(this);
+                        break;
                         
                 }
                 timer2.Interval = 5000;

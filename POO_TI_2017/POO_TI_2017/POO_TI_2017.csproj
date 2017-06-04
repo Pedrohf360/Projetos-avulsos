@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bender.cs" />
     <Compile Include="Bullet.cs" />
     <Compile Include="BulletAmarelo.cs" />
     <Compile Include="BulletAzul.cs" />
@@ -201,6 +202,10 @@
     <None Include="Resources\yellowBullet.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bender1.png" />
+    <None Include="Resources\bender2.png" />
+    <None Include="Resources\bender3.png" />
+    <None Include="Resources\bender4.png" />
     <Content Include="Resources\dibrador1.png" />
     <None Include="Resources\dibrador2.png" />
   </ItemGroup>
